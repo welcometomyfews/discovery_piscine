@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        width: 100%;
+        height: 100%;
+        }
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+        flex-direction: column;
+        }
+        .cals {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        }
+    </style>
+</head>
+<!------------------------------------------------------------------------->
+<body>
+    <div class="container">
+       <h2>Calculator</h2>
+     <div class="cals">
+     <div class="input-left">
+    <input type="text" id="inputleft">
+    </div>
+        <select id="operator">
+        <option value="a">+</option>
+        <option value="b">-</option>
+        <option value="c">*</option>
+        <option value="d">/</option>
+        <option value="e">%</option>
+    </select>
+    <div class="input-right">
+        <input type="text" id="inputright">
+    </div>
+</div>
+    <div class="cals">
+        <button onclick="calc()">Try me!</button>
+    </div></div>
+<!------------------------------------------------------------------------->
+   <script>
+   setInterval(() => {
+        alert("Please, use me...")
+    }, 30000)
+function calc() {
+let inputleft = document.getElementById("inputleft").value;
+let operator = document.getElementById("operator").value;
+let inputright = document.getElementById("inputright").value;
+var result = 0; /*var >>> result func calc*/
+
+inputleft = parseInt(inputleft);
+inputright = parseInt(inputright);
+
+if (isNaN(inputleft) || isNaN(inputright)) {
+    result = "Error :(";
+} else if (inputleft < 0 || inputright < 0) {
+    result = "Error :(";
+} else if (operator == 'a') {
+    result = inputleft + inputright;
+
+} else if (operator == 'b') {
+    result = inputleft - inputright;
+
+} else if (operator == 'c') {
+    result = inputleft * inputright;
+
+} else if (operator == 'd') {
+    if (inputright == 0) {
+        result = "It's over 9000!";
+    } else {
+        result = inputleft / inputright;
+    }
+
+} else if (operator == '5') {
+    if (inputright == 0) {
+        result = "It's over 9000!";
+    } else {
+        result = inputleft % inputright;
+    }
+}
+alert(result);
+console.log(result);
+}
+   
+    </script>
+</body>
+</html>

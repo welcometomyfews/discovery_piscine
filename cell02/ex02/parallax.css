@@ -1,0 +1,30 @@
+body,html {
+    height: 100%;
+    margin: 0%;
+}
+.parallax1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.discordapp.com/attachments/1015575973246287895/1018479059803570186/naruto_98.png);
+    height: 100%;
+    background-attachment: fixed;
+}
+.parallax2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img1.ak.crunchyroll.com/i/spire1-tmb/1db4c73cabd6ff689ac6126df47d8e1d1477541417_main.jpg);
+    height: 100%;
+    background-attachment: fixed;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50%;
+}
+.text {
+    font-size: 30px;
+}

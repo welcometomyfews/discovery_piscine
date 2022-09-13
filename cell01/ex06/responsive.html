@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0px;
+        } 
+        span {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+        .main {
+            display: flex;
+            height: 100%;
+        }
+       
+        .left {
+            border: 1px solid;
+            flex-basis: 50%;
+            height: 100%;
+            background-color: #90C796;
+            width: 50%;
+        }
+        .right {
+            border: 1px solid;
+            border-left: none;
+            flex-basis: 50%;
+            height: 100%;
+            background-color: #EDAA98;
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="left">
+    <span>First Cell</span>
+    </div>
+    <div class="right">
+        <span>Second Cell</span>
+        </div>
+    </div>
+</body>
+</html>
